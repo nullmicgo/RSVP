@@ -4,10 +4,10 @@ import Proptypes from 'prop-types';
 const GuestList = props =>
     <ul>
         {props.guests.map((guest,index) =>
-            <li>
-            <span>Nick</span>
+            <li key={index}>
+            <span>{guest.name}</span>
             <label>
-                <input type="checkbox" /> Confirmed
+                <input type="checkbox" checked={guest.isConfirmed} /> Confirmed
             </label>
             <button>edit</button>
             <button>remove</button>

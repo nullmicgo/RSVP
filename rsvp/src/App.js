@@ -13,6 +13,10 @@ state ={
     {
       name:'Nick Wong',
       isConfirmed:true
+    }, 
+    {
+      name:'Jerry',
+      isConfirmed:false
     },    
   ]
 }
