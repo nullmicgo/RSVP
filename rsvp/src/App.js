@@ -25,18 +25,26 @@ state ={
 }
 
 
-toggleConfirmationAt = indexToChange => 
+toggleConfirmationAt = index => 
+this.toggleGuestPropertyAt("isConfirmed", index);
+
+
+
+toggleGuestPropertyAt = (property, indexToChange) => 
 this.setState({
     guests: this.state.guests.map((guest, index) =>{
         if(index === indexToChange){
            return {
                 ...guest,
-                isConfirmed: !guest.isConfirmed
+                [property]: !guest[property]
            }
         }
         return guest;
     })
 });
+
+
+
 
 
 
