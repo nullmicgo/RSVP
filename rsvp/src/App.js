@@ -8,15 +8,18 @@ state ={
   guests:[
     {
       name:'Sam Liu',
-      isConfirmed:false
+      isConfirmed:false,
+      isEditing: false
     },
     {
       name:'Nick Wong',
-      isConfirmed:true
+      isConfirmed:true,
+      isEditing: false
     }, 
     {
       name:'Jerry',
-      isConfirmed:false
+      isConfirmed:false,
+      isEditing: true
     },    
   ]
 }
