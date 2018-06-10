@@ -28,6 +28,9 @@ state ={
 toggleConfirmationAt = index => 
 this.toggleGuestPropertyAt("isConfirmed", index);
 
+toggleEditingAt = index => 
+this.toggleGuestPropertyAt("isEditing", index);
+
 
 
 toggleGuestPropertyAt = (property, indexToChange) => 
@@ -92,7 +95,9 @@ getTotalInvited = () => this.state.guests.length;
   
 
       <GuestList guests={this.state.guests} 
-        toggleConfirmationAt={this.toggleConfirmationAt}/>
+        toggleConfirmationAt={this.toggleConfirmationAt}
+        toggleEditingAt={this.toggleEditingAt}
+        />
 
       </div>
     </div>
