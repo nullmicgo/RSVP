@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
+import React from "react";
+import PropTypes from "prop-types";
 
 const ConfirmedFilter = props =>
-    <div>
+  <div>
     <h2>Invitees</h2>
     <label>
-      <input type="checkbox" 
-      onChange={props.toggleFilter}
-      checked={props.isFiltered}
-      /> Hide those who haven't responded
+      <input
+        type="checkbox"
+        onChange={props.toggleFilter}
+        checked={props.isFiltered}
+      />{" "}
+      Hide those who haven't responded
     </label>
-    </div>
-;
+  </div>;
 
-  
 ConfirmedFilter.propTypes = {
   toggleFilter: PropTypes.func.isRequired,
   isFiltered: PropTypes.bool.isRequired
