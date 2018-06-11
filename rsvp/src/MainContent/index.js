@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import ConfirmedFilter  from './ConfirmedFilter';
 import GuestList  from './GuestList';
 import Counter  from './Counter';
-import GuestInputForm  from './GuestInputForm';
 
 
 const MainContent = props =>
