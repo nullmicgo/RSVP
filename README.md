@@ -6,5 +6,4 @@ In this app, i am going to use React to manage all response from my  invited per
 
 ![terminal screen](https://raw.githubusercontent.com/nullmicgo/RSVP/master/screen.png)
 
-![JSON Content](https://raw.githubusercontent.com/nullmicgo/RSVP/master/screen002.png)
 
